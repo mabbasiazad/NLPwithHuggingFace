@@ -4,6 +4,19 @@ Pre-requisite: run data_preparation.py first
 Project: Condition Classifier
 train a classifier that can predict the patient condition based on the drug review.
 """
+"""
+sample DATA
+{'patient_id': 206461,
+ 'drugName': 'Valsartan',
+ 'condition': 'left ventricular dysfunction',
+ 'review': '"It has no side effect, I take it in combination of Bystolic 5 Mg and Fish Oil"',
+ 'rating': 9.0,
+ 'date': 'May 20, 2012',
+ 'usefulCount': 27,
+ 'review_length': 17}
+"""
+
+
 import torch
 # loading the dataset
 from datasets import load_from_disk
